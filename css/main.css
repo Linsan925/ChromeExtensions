@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.fl {
+    float: left;
+}
+
+#rnsshelperContainer {
+    background-color: #fff;
+    display: block;
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #AAA;
+    font-family: "宋体", Arial, Helvetica, sans-serif;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    font-size: 14px;
+    z-index: 9999;
+}
+
+.rnssHelper-logo {
+    width: 187px;
+    margin-right: 5px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: wheat;
+    background-color: #2866A9;
+    float: left;
+}
+
+.rnssHelper-body {
+    line-height: 30px;
+    background-color: #FFF;
+    overflow: hidden;
+    float: left;
+    /*max-width: 78%;
+	width: auto;
+	min-width: 60%;*/
+    /*height: 30px;*/
+}
+
+
+/*通用按钮样式*/
+
+.rnssHelper-button {
+    display: inline-block;
+    padding: 0 7px;
+    margin-top: 3px;
+    margin-right: 8px;
+    height: 22px;
+    line-height: 22px;
+    background-color: #fff;
+    color: #337ab7;
+    text-align: center;
+    border: 1px solid #337ab7;
+    cursor: pointer;
+    float: left;
+}
+
+.rnssHelper-button.green {
+    color: #1BBC9B !important;
+    border: 1px solid #1BBC9B !important;
+}
+
+.updateMsg {
+    margin: 0 10px;
+}
+
+#rnsshelperContainer span {
+    display: inline-block;
+    float: left;
+    /*height: 30px;*/
+    margin: 0 10px;
+    width: auto;
+    /*max-width: 800px;*/
+    /*overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;*/
+}
+
+#rnsshelperBody .hasResultSpan {}
+
+#rnsshelperContainer a {
+    text-decoration: none;
+}
+
+#rnsshelperContainer .colors {
+    color: #2866A9;
+    text-decoration: none;
+}
+
+#rnsshelperContainer .colors:hover {
+    color: #2866A9;
+}
+
+#rnsshelperContainer .dloadUrl {
+    color: #2866A9;
+}
+
+#rnsshelperContainer .dloadUrl:hover {
+    color: green;
+}
+
+
+/*#rnsshelperContainer a:hover {
+	color: #fff;
+}*/
+
+@media (min-width:600px) and (max-width:1200px) {
+    #rnsshelperBody .hasResultSpan {
+        width: 60%;
+        white-space: normal;
+        word-break: break-all;
+    }
+}
+
+@media (min-width:1200px) and (max-width:1440px) {
+    #rnsshelperBody .hasResultSpan {
+        width: 70%;
+        white-space: normal;
+        word-break: break-all;
+    }
+}
+
+.thanksTips {
+    animation: addone 1.5s;
+    -moz-animation: addone 1.5s;
+    -webkit-animation: addone 1.5s;
+    -o-animation: addone 1.5s;
+    position: absolute;
+    top: 0;
+    left: 418px;
+    font-weight: bold;
+    color: red;
+}
+
+#rnsshelperBody .appdownload-btn {
+    padding: 0 7px;
+    margin-top: 3px;
+    height: 22px;
+    line-height: 22px;
+    color: #f00;
+    text-align: center;
+    border: 1px solid #f00;
+    cursor: pointer;
+    float: left;
+}
+
+@keyframes addone {
+    from {
+        top: 0;
+    }
+    to {
+        top: -10px;
+    }
+}
